@@ -82,3 +82,18 @@
 .appearance-list {
   padding: 10px;
 }
+
+.detail-icon {
+  width: 50px!important;
+  height: 50px!important;
+}
+
+.detail-title {
+  display: inline;
+  float: left;
+}
+
+.attck-logo {
+  width: 50px!important;
+  height: 50px!important;
+}
