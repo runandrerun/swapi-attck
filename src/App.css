@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #fafafa;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #2E2E2E;
+  box-shadow: 1px 1px 10px;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+/* character card */
+.characters-container {
+  margin-top: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.character-card {
+  text-align: center;
+  background-color: #fafafa;
+  border: 1px solid #2E2E2E;
+  color: #2E2E2E;
+  border-radius: 25px;
+  padding: 10px;
+  margin-top:20px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s, box-shadow 0.5s, border 1s;
+}
+
+.character-card:hover {
+  border: 1px solid #fff;
+  background-color: #2E2E2E;
+  color: #fff;
+  box-shadow: 2px 2px 8px;
+}
+
+.character-card:active {
+  background-color: #2E2E2E;
+  color: #fff;
+  box-shadow: 2px 2px 8px;
+}
+
+.character-detail {
+  text-align: left;
+  background-color: #fafafa;
+  color: #2E2E2E;
+  border-radius: 25px;
+  padding: 10px;
+  margin-top: 40px;
+  width: 100%;
+  box-shadow: 2px 2px 8px;
+}
+
+.character-detail h2 {
+  font-weight: bold;
+  text-align: center;
+  color: #2E2E2E;
+  margin-bottom: 10px;
+}
+
+.loading-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.appearance-list {
+  padding: 10px;
+}
