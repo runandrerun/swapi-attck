@@ -8,9 +8,14 @@ export default class CharacterDetail extends Component {
 
   createAppearanceList = () => {
     if (this.props.movieList !== undefined) {
-      return this.props.movieList.map((film, i) => {
+      let sortedMovieList = this.props.movieList.sort((a,b) => {
+        console.log(parseInt(a.release_date))
+        console.log(parseInt(b.release_date))
+          return parseInt(a.release_date) - parseInt(b.release_date);
+        });
+      return sortedMovieList.map((film, i) => {
         let moment = require('moment');
-        return <li className="list-group-item" key={i}>{`${film.title} – Released on ${moment(film.release_date).format('MMMM Do YYYY')}`}</li>
+        return <li className="list-group-item" key={i}>{`${i + 1}. ${film.title} – Released on ${moment(film.release_date).format('MMMM Do YYYY')}`}</li>
       });
     };
   };
@@ -48,12 +53,10 @@ export default class CharacterDetail extends Component {
         <div className="col-sm">
           <div id={`${this.props.character.name}-card`} className="character-detail">
             <h2>{this.props.character.name} {this.renderIcon()}</h2>
+            <p>{`${this.props.character.name} appeared in the following movies.`}</p>
             <ul className="list-group">
               {this.props.movieList ? this.createAppearanceList() : null}
             </ul>
-            {/*<div className="appearance-list">
-                {this.props.movieList ? this.createAppearanceList() : null}
-            </div>*/}
           </div>
         </div>
       )

@@ -75,6 +75,11 @@
   margin-bottom: 10px;
 }
 
+.character-detail p {
+  text-align: center;
+  color: #2E2E2E;
+}
+
 .loading-container {
   margin-top: 20px;
   text-align: center;

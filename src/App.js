@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div>swapi <img alt="SwapiAttck logo" className="attck-logo" src={Lightsaber} /> attck</div>
+        <div>swapi <img alt="Swapi Attck logo" className="attck-logo" src={Lightsaber} /> attck</div>
       </header>
       <CharactersContainer />
     </div>
