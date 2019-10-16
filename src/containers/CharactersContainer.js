@@ -60,14 +60,6 @@ export default class CharactersContainer extends Component {
     })
   };
 
-  // sortMovieList = () => {
-  //   let currentMovieList = this.state.movieList.sort((a,b) => {
-  //     a.release_date.getTime() - b.release_date.getTime()
-  //   });
-  //   return this.setState({
-  //     movieList: currentMovieList
-  //   })
-  // }
   render() {
     return(
       <div className="container characters-container">
