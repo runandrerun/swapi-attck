@@ -3,14 +3,11 @@ import JediLightsaber from '../_assets/img/jedi-lightsaber.svg';
 import SithLightsaber from '../_assets/img/sith-lightsaber.svg';
 import R2D2 from '../_assets/img/r2d2.svg';
 
-
 export default class CharacterDetail extends Component {
 
   createAppearanceList = () => {
     if (this.props.movieList !== undefined) {
       let sortedMovieList = this.props.movieList.sort((a,b) => {
-        console.log(parseInt(a.release_date))
-        console.log(parseInt(b.release_date))
           return parseInt(a.release_date) - parseInt(b.release_date);
         });
       return sortedMovieList.map((film, i) => {
